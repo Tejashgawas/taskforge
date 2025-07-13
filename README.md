@@ -19,7 +19,12 @@ A learning-focused backend app using Flask, Redis to simulate real-world enginee
 
 ## 🖼 Demo Screenshot
 
-<img width="795" height="222" alt="image" src="" />
+<img width="700" height="300" alt="image" src="frontend/demo/demo1_.png" />
+<img width="700" height="300" alt="image" src="frontend/demo/demo2 (2).png" />
+<img width="700" height="300" alt="image" src="frontend/demo/demo3.png" />
+<img width="700" height="300" alt="image" src="frontend/demo/demo4.png" />
+<img width="700" height="300" alt="image" src="frontend/demo/demo5.png" />
+<img width="700" height="300" alt="image" src="frontend/demo/demo6.png" />
 
 
 ---
