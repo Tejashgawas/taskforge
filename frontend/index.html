@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Redis Backend Demo</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 Redis Backend Feature Demo</h1>
+
+    <!-- 🔐 Session Management -->
+    <div class="section">
+      <h2>🔐 Session Management</h2>
+      <form id="loginForm">
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <button type="submit">Login</button>
+      </form>
+      <div class="btn-group">
+        <button onclick="checkSession()">Check Session</button>
+        <button onclick="logout()">Logout</button>
+      </div>
+      <div class="result" id="sessionResult"></div>
+    </div>
+
+    <!-- 📩 OTP Handling -->
+    <div class="section">
+      <h2>📩 OTP Handling</h2>
+      <input type="email" id="otpEmail" placeholder="Email for OTP" />
+      <button onclick="sendOTP()">Send OTP</button>
+      <input type="text" id="otpCode" placeholder="Enter OTP" />
+      <button onclick="verifyOTP()">Verify OTP</button>
+      <div class="result" id="otpResult"></div>
+    </div>
+
+    <!-- 📄 Article Caching -->
+    <div class="section">
+      <h2>📄 Article Caching</h2>
+      <input type="number" id="articleId" placeholder="Article ID" />
+      <button onclick="fetchArticle()">Get Article</button>
+      <button onclick="clearArticleCache()">🧹 Clear Cache</button>
+      <button onclick="getArticleTTL()">⏱️ Check Cache TTL</button>
+
+
+      <div class="result" id="articleResult"></div>
+    </div>
+
+    <!-- 🚫 Rate Limiting -->
+    <div class="section">
+      <h2>🚫 API Rate Limiting</h2>
+      <button onclick="hitLimited()">Try Limited Endpoint</button>
+      <div class="result" id="rateLimitResult"></div>
+    </div>
+
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
